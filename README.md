@@ -8,37 +8,37 @@ This project demonstrates how to build a practical chatbot with a simple backend
 ---
 
 ## Features
-- 🔍 **Book Search**: Find books by title, author, or keyword.
-- 📖 **Borrow & Return**: Manage book loans with borrowing policies enforced.
-- ⏳ **Renewals**: Extend loan periods within policy limits.
-- 🧑‍🤝‍🧑 **User Accounts**: Track borrowing history per user.
-- 📊 **Catalog Compression**: Efficient handling of large book catalogs using context compression.
-- 💡 **Recommendations**: Suggest books based on borrowing history or catalog metadata.
+* 🔍 **Book Search**: Find books by title, author, or keyword.
+* 📖 **Borrow & Return**: Manage book loans with borrowing policies enforced.
+* ⏳ **Renewals**: Extend loan periods within policy limits.
+* 🧑‍🤝‍🧑 **User Accounts**: Track borrowing history per user.
+* 📊 **Catalog Compression**: Efficient handling of large book catalogs using context compression.
+* 💡 **Recommendations**: Suggest books based on borrowing history or catalog metadata.
 
 ---
 
 ## Tech Stack
-- **Language**: Python
-- **Framework**: Flask (for web/chat interface)
-- **Database**: SQLite (lightweight, portable)
-- **Libraries**:
-  - `sqlite3` for database operations
-  - `Flask` for chatbot API and UI
-  - `NLTK` or `spaCy` (optional) for natural language parsing
+* **Language**: Python
+* **Framework**: Flask (for web/chat interface)
+* **Database**: SQLite (lightweight, portable)
+* **Libraries**:
+    * `sqlite3` for database operations
+    * `Flask` for chatbot API and UI
+    * `NLTK` or `spaCy` (optional) for natural language parsing
 
 ---
 
 ## Project Structure
+```text
 library-assistant-chatbot/
 │
-├── app.py                 # Main Flask application
-├── database.db            # SQLite database (auto-generated)
-├── schema.sql             # Database schema (books, users, loans)
+├── app.py                # Main Flask application
+├── database.db           # SQLite database (auto-generated)
+├── schema.sql            # Database schema (books, users, loans)
 ├── static/               # Static assets (CSS, JS)
 ├── templates/            # HTML templates for web UI
-└── README.md              # Documentation
-
----
+└── README.md             # Documentation
+```
 
 ## Setup Instructions
 
