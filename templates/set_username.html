@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Set Username</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/script.js" defer></script>
+  <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="bg-texture" aria-hidden="true">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="auth-shell">
+    <section class="auth-panel">
+      <div class="brand-badge">
+        <div class="logo-mark">LA</div>
+        <div>
+          <p class="eyebrow">Library Concierge</p>
+          <h2>Assistant Console</h2>
+        </div>
+      </div>
+      <p class="hero-copy">Talk to a librarian-inspired guide that knows your catalog, policies, and personal queue.</p>
+      <ul class="auth-highlights">
+        <li>Instant availability checks</li>
+        <li>Borrow, renew, return in one thread</li>
+        <li>Personalized picks from your history</li>
+      </ul>
+    </section>
+
+    <section class="auth-card">
+      <p class="eyebrow">Welcome back</p>
+      <h1>Let’s personalize your visit</h1>
+      <p class="subtitle">Share your name so we can pull your loan history and tailor recommendations.</p>
+
+      <form method="post" action="/set_username" class="auth-form">
+        <label for="username">Your name</label>
+        <input type="text" id="username" name="username" placeholder="e.g., Maya Patel" required>
+        <button type="submit">Enter the Reading Room</button>
+      </form>
+
+      <p class="fineprint">We only use your name to keep your borrowing activity in sync across devices.</p>
+    </section>
+  </div>
+</body>
+</html>
